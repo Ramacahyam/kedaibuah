@@ -1,0 +1,509 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: rgb(24, 19, 19);
+  /* height: 3000px; */
+}
+
+:root {
+  --bg--prymary: rgb(113, 4, 255);
+  --bg--seceondary: rgb(255, 255, 255);
+}
+
+/* navbar */
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 55px;
+  position: fixed;
+  background-color: rgba(5, 5, 5, 0.8);
+  border-bottom: 1px solid var(--bg--seceondary);
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999999;
+}
+
+.navbar-pt {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+.navbar-pt a {
+  color: var(--bg--seceondary);
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.navbar-pt span {
+  color: var(--bg--prymary);
+}
+
+.container-nav {
+  margin-top: 10px;
+}
+
+.container-nav a {
+  color: var(--bg--seceondary);
+  text-decoration: none;
+  padding: 10px;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.container-nav a:hover {
+  color: var(--bg--prymary);
+  transition: 0.6s;
+}
+
+.navbar-icon {
+  margin-right: 25px;
+  margin-top: 10px;
+}
+
+.navbar-icon a {
+  color: var(--bg--seceondary);
+  padding: 8px;
+}
+
+.navbar-icon a:hover {
+  color: var(--bg--prymary);
+  transition: 0.6s;
+}
+
+#menu {
+  display: none;
+}
+
+/* navbar end */
+
+.conten {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background-image: url("../gambar/pngtree-selection-of-fruit-piled-up-in-a-basket-image_2937062.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+.conten::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 30%;
+  bottom: 0;
+  background: linear-gradient(
+    0deg,
+    rgb(24, 19, 19) 10%,
+    rgba(255, 255, 255, 0) 70%
+  );
+}
+
+.conten-tulisan {
+  position: absolute;
+  color: var(--bg--seceondary);
+  right: 360px;
+  top: 200px;
+  text-transform: capitalize;
+}
+
+.conten-tulisan h1 {
+  font-size: 1.9rem;
+  font-weight: 700;
+}
+
+.conten-tulisan h2 {
+  padding-top: 5px;
+  font-weight: 700;
+}
+
+.conten-lanjut {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  width: 250px;
+  height: 30px;
+  position: absolute;
+  right: 570px;
+  background-color: var(--bg--prymary);
+  border-radius: 30px;
+}
+
+.conten-lanjut a {
+  color: var(--bg--seceondary);
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.row-judul {
+  display: block;
+  text-align: center;
+  padding-top: 80px;
+}
+
+.row-judul h1 {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: var(--bg--prymary);
+}
+
+.row-judul p {
+  padding-top: 8px;
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--bg--seceondary);
+}
+
+.ini-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.row-model {
+  margin-top: 40px;
+  margin-right: 10px;
+}
+.row-model img {
+  width: 300px;
+  height: 300px;
+}
+
+.gambar-tulisan {
+  text-align: center;
+  width: 500px;
+  margin-top: 50px;
+  margin-left: 10px;
+}
+
+.gambar-tulisan h2 {
+  font-size: 1.7rem;
+  color: var(--bg--prymary);
+  font-weight: 700;
+}
+.gambar-tulisan p {
+  font-size: 0.9rem;
+  color: var(--bg--seceondary);
+  font-weight: 100;
+}
+
+.row-prodak h1 {
+  display: block;
+  text-align: center;
+  padding-top: 80px;
+  color: var(--bg--prymary);
+}
+
+.ini-prodak {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.gambar-prodak {
+  margin-top: 20px;
+}
+
+.gambar-prodak img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  padding: 8px;
+}
+
+.gambar-prodak p {
+  color: var(--bg--seceondary);
+  font-size: 0.9rem;
+  font-weight: 300;
+  padding-top: 10px;
+}
+
+.gambar-prodak a {
+  text-decoration: none;
+  color: var(--bg--prymary);
+  font-size: 1rem;
+}
+
+/* menu and */
+
+/* contak */
+
+.row-isi {
+  display: block;
+  text-align: center;
+}
+
+.row-isi h1 {
+  color: var(--bg--prymary);
+  padding-top: 80px;
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+.row-isi p {
+  color: var(--bg--seceondary);
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+.row-map {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.container-map {
+  display: flex;
+  justify-content: center;
+}
+
+.laporan {
+  width: 450px;
+}
+
+.laporan-row {
+  display: block;
+  text-align: center;
+}
+.laporan-row form {
+  display: block;
+}
+
+.laporan-row form {
+  padding-left: 10px;
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  background-color: black;
+  border: 1px solid var(--bg--seceondary);
+  padding-left: 2rem;
+}
+
+.input input {
+  width: 100%;
+  font-size: 1rem;
+  border: none;
+  background: none;
+}
+
+button {
+  margin-top: 10px;
+  border: none;
+  width: 50px;
+  height: 30px;
+  font-size: 0.9rem;
+  background-color: var(--bg--prymary);
+}
+
+.data {
+  color: var(--bg--seceondary);
+  padding: 10px;
+}
+
+/* map and */
+
+/* footer */
+
+.data-row {
+  display: block;
+  text-align: center;
+  width: 100%;
+  height: 100px;
+  margin-top: 20px;
+  background-color: var(--bg--prymary);
+}
+
+.data-foter {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+/* responsip */
+
+/* @media (max-width: 1366px) {
+  .container {
+    width: 100%;
+    height: 100px;
+  }
+
+  .navbar-pt {
+    margin-top: 30px;
+  }
+  .navbar-pt a {
+    font-size: 1.8rem;
+  }
+
+  .container-nav {
+    margin-top: 30px;
+  }
+
+  .container-nav a {
+    font-size: 1.3rem;
+  }
+
+  .navbar-icon {
+    margin-top: 30px;
+  }
+
+  .conten {
+    position: relative;
+  }
+  .conten-tulisan {
+    position: absolute;
+    right: 30px;
+    top: 400px;
+  }
+
+  .conten-tulisan {
+    font-size: 1.5rem;
+  }
+
+  .conten-lanjut {
+    top: 580px;
+    right: 370px;
+    width: 300px;
+    height: 33px;
+  }
+
+  .conten-lanjut a {
+    font-size: 1.6rem;
+  }
+} */
+/* tablet */
+
+@media (max-width: 768px) {
+  #menu {
+    display: inline-block;
+  }
+
+  .container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 99999;
+  }
+
+  .navbar-pt a {
+    font-size: 1.5rem;
+  }
+
+  .container-nav {
+    position: absolute;
+    flex-wrap: wrap;
+    text-align: center;
+    top: 100%;
+    right: -100%;
+    background-color: var(--bg--seceondary);
+    height: 520px;
+    width: 15rem;
+    transition: 0.8s;
+  }
+
+  .container-nav a {
+    flex-direction: column;
+    display: block;
+    color: black;
+    padding: 6px;
+  }
+
+  .container-nav.active {
+    right: 0;
+  }
+
+  .navbar-icon {
+    margin-top: 10px;
+  }
+
+  .conten {
+    position: relative;
+  }
+  .conten-tulisan {
+    position: absolute;
+    right: 40px;
+    top: 300px;
+  }
+
+  .conten-tulisan {
+    font-size: 1rem;
+  }
+
+  .conten-lanjut {
+    top: 400px;
+    right: 280px;
+    width: 210px;
+    height: 25px;
+  }
+
+  .conten-lanjut a {
+    font-size: 1.2rem;
+  }
+
+  .row-map {
+    flex-wrap: wrap;
+  }
+}
+
+/* mobaline hp */
+@media (max-width: 450px) {
+  .container {
+    width: 100%;
+    height: 60px;
+  }
+
+  .navbar-pt {
+    margin-top: 20px;
+  }
+
+  .navbar-pt a {
+    font-size: 1.2rem;
+  }
+
+  .conten {
+    position: relative;
+  }
+  .conten-tulisan {
+    position: absolute;
+    right: 20px;
+    top: 250px;
+  }
+
+  .conten-tulisan {
+    font-size: 0.8rem;
+  }
+
+  .conten-tulisan h1 {
+    font-size: 1.1;
+  }
+
+  .conten-lanjut {
+    top: 400px;
+    right: 111px;
+    width: 200px;
+    height: 20px;
+  }
+
+  .conten-lanjut a {
+    font-size: 1rem;
+  }
+}
